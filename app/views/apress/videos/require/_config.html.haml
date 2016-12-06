@@ -1,0 +1,10 @@
+:javascript
+  app.config.videos = {
+    maxVideosCount: #{options.fetch(:videos_limit).to_json},
+    regexp: #{Apress::Videos::Provider.all.map(&:regex)},
+    uploadData: {
+      authenticityToken: #{form_authenticity_token.to_json},
+      subjectType: #{options.fetch(:subject_type).to_json},
+      subjectId: #{options.fetch(:subject_id).to_json}
+    }
+  };

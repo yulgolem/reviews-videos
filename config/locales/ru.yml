@@ -1,0 +1,9 @@
+ru:
+  activeyaml:
+    errors:
+      models:
+        'apress/videos/provider':
+          not_found: Не удалось найти провайдера видео
+  validators:
+    oembed:
+      message: В полученных данных нет значения обязательных полей %{fields}

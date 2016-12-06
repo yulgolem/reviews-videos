@@ -1,0 +1,12 @@
+- id: 1
+  name: youtube
+  endpoint: 'https://www.youtube.com/oembed?url=%{url}'
+  regex: 'http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)'
+- id: 2
+  name: vimeo
+  endpoint: 'https://vimeo.com/api/oembed.json?url=%{url}'
+  regex: 'http(?:s?):\/\/(?:www\.)?(vimeo\.com\/)([0-9]+)$'
+- id: 3
+  name: rutube
+  endpoint: 'https://rutube.ru/api/oembed/?format=json&url=%{url}'
+  regex: '(?:https?:)?(?:\/\/)?(?:www\.)?rutube.ru\/(?:video|play\/embed)\/([0-9a-z]+)\/?$'
